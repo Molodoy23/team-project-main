@@ -13,3 +13,26 @@ body {
     padding: 0px 183px;
   }
 }
+.title {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: black;
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+  @media screen and (min-width: 1140px) {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+}
+img {
+  margin: 0 auto;
+}

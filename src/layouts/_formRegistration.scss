@@ -1,0 +1,91 @@
+.registration {
+  @media screen and (min-width: 768px) {
+    padding: 67px 20px;
+  }
+  padding: 55px 20px;
+  width: 100%;
+  background-image: url(../images/groupTeacher.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 83%;
+  &__title,
+  &__description {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  &__title {
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+    }
+    margin-bottom: 24px;
+  }
+  &__description {
+    @media screen and (min-width: 768px) {
+      margin: 0 auto 23px auto;
+      width: 452px;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      letter-spacing: 0.08em;
+    }
+    margin-bottom: 43px;
+  }
+  &__description {
+    font-weight: 600;
+  }
+  &__span {
+    color: $orange;
+  }
+  &__button {
+    @media screen and (min-width: 768px) {
+      margin: 31px auto 0px auto;
+    }
+    text-align: center;
+    color: $white;
+    background-color: $orange;
+    font-size: 12px;
+    font-weight: 700;
+    width: 260px;
+    padding: 14px 0px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin: 50px auto 0px auto;
+    display: block;
+  }
+}
+.form-registration {
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+  }
+  &__input {
+    @media screen and (min-width: 768px) {
+      width: 390px;
+      align-items: center;
+    }
+    outline: none;
+    background: transparent;
+    border: none;
+    color: $white;
+    border: 1px solid #fff;
+    padding: 15px 0px 15px 28px;
+  }
+  &__input:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  &__input::placeholder {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.08em;
+    color: $white;
+  }
+}
