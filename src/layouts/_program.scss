@@ -1,0 +1,197 @@
+.program {
+
+    background: #111518;
+
+     &__point {
+        
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 500px;
+
+    @media screen and (min-width: 768px) {
+    padding-bottom: 380px;    
+    }
+     }
+
+    &__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;
+
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    
+    @media screen and (min-width: 768px) {
+    text-align: left; 
+    }
+}
+
+    &__line {
+        
+        &-top {
+            position: absolute;
+            margin-left: 4.4px;
+            width: 1px;
+            height: 380px;
+            border-left: 1px solid #ffffff;
+
+            @media screen and (min-width: 768px) {
+                height: 270px;
+            }
+        }
+
+        &-center {
+            position: absolute;
+            margin-left: 4.4px;
+            height: 380px;
+            border-left: 1px solid #ffffff;
+
+            @media screen and (min-width: 768px) {
+                
+            }
+        }
+
+        &-bottom {
+            border-left: 1px solid #ffffff;
+            height: 740px;
+            position: absolute;
+            margin-left: 4.4px;
+            max-width: 1px; 
+
+            @media screen and (min-width: 768px) {
+                height: 420px;    
+            }
+        }
+
+    }
+
+    &__list {
+    justify-content: center;
+    max-width: 140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;  
+    }
+    }
+
+    &__flexible {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+
+    &__circle {
+        position: absolute;
+        left: auto;
+        z-index: 2;
+    }
+
+    &__term {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-left: 25px;
+        color: #FFFFFF;
+
+        @media screen and (min-width: 768px) {
+        margin-left: 55px; 
+        margin-bottom: 5px;    
+        }
+    }
+
+    &__unit {
+
+        margin-bottom: 8px;
+        
+        @media screen and (min-width: 768px) {
+        width: 176px;
+
+            &:not(:last-child){
+            margin-right: 50px;
+            }
+        }
+
+        &-title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 164.9%;
+            
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.08em;
+            margin-left: 25px;
+            margin-bottom: 5px;
+            color: #FF6B09;
+
+            @media screen and (min-width: 768px) {
+            margin-bottom: 5px;    
+            }
+        }
+
+        &-info {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            /* or 167% */
+            max-width: 320px;
+            letter-spacing: 0.08em;
+            
+            color: #B9B9B9;
+            margin-left: 25px;
+            
+            opacity: 0.5;
+
+            &:hover {
+                color:#FFFFFF;
+            }
+        }
+
+    }
+
+    &__bg {
+    position: absolute;
+    width: 120px;
+    height: 137px;
+    transform: translate(90%, -30%);
+    opacity: 0.5;
+    background-image: url(../images/classroom-320.jpg);
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 768px) {
+    width: 383px;
+    height: 280px;
+    transform: translate(90%, -50%);
+    background-image: url(../images/classroom.jpg);
+
+    }
+    }
+
+}

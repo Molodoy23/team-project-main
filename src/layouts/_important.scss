@@ -1,0 +1,107 @@
+.important {
+
+    position: relative;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+    max-width: 768px;
+    }
+    &__absolute {
+    position: absolute;
+    width: 280px;
+    top: -450px;
+
+    @media screen and (min-width: 768px) {
+    width: 688px;
+    top: -170px;
+    }
+    }
+
+    &__title {
+    max-width: 150px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 136%;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 768px) {
+        max-width: 100%;
+        text-align: center;
+    }
+    }
+
+    &__bg {
+        padding: 20px;
+        width: 280px;
+        height: 638px;
+        box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        background: #FFFFFF;
+
+        @media screen and (min-width: 768px) {
+            width: 688px;
+            height: 394px;
+            padding: 40px;
+
+            background: #FFFFFF;
+            box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+        }
+        }
+
+    &__list {
+
+        column-count: 1;
+
+        @media screen and (min-width: 768px) {
+            column-count: 2;
+        }
+
+        @media screen and (min-width: 1140px) {
+            
+        }
+
+    }
+
+    &__item {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    }
+
+    &__numbering {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 164.9%;
+        
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+        margin-bottom: 10px;
+
+        color: #FF6B09;
+        
+        
+    }
+
+    &__activity {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.08em;
+        
+        color: #111518;
+    }
+}
