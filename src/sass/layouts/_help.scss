@@ -1,0 +1,56 @@
+.help {
+  background-color: $black;
+  padding-top: 25px;
+  height: 545px;
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: $white;
+    padding-bottom: 25px;
+  }
+  &__title--span {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: $orange;
+  }
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: $orange;
+    margin-bottom: 5px;
+  }
+  &__scroll {
+    background-color: $white;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 30px;
+    padding-right: 25px;
+    background-color: $white;
+    box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+  }
+  &__item {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.08em;
+    color: $black;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}
