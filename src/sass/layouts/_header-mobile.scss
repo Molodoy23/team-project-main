@@ -7,7 +7,11 @@
   &__logo {
     @media screen and (max-width: 767px) {
       padding-top: 30px;
+      min-width: 320px;
       margin-bottom: 50px;
+    }
+    @media screen and(min-width:768px) {
+      display: none;
     }
   }
   &__logo-menu {
@@ -25,6 +29,9 @@
     line-height: 6px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    @media screen and(min-width:768px) {
+      display: none;
+    }
   }
   &__logo-subtitle--span {
     color: $black;
@@ -35,6 +42,9 @@
     line-height: 6px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
+    @media screen and(min-width:768px) {
+      display: none;
+    }
   }
 }
 .header__mobile-nav .mobile__nav {
@@ -47,6 +57,10 @@
     position: absolute;
     top: 27px;
     right: 19.5px;
+    @media screen and(min-width:768px) {
+      top: 42px;
+      right: 39.5px;
+    }
     @media screen and (max-width: 767px) {
       display: inline-flex;
     }
@@ -68,6 +82,7 @@
 }
 .mobile__nav {
   text-align: left;
+
   &-button-consul {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -83,6 +98,9 @@
     margin-left: 10px;
     width: 260px;
     height: 48px;
+    @media screen and(min-width:768px) {
+      display: none;
+    }
   }
   &-list {
     position: relative;
@@ -105,6 +123,10 @@
     top: 27px;
     right: 19.5px;
     fill: $white;
+    @media screen and(min-width:768px) {
+      top: 42px;
+      right: 39.5px;
+    }
   }
   &-link-is-active {
     font-family: 'Montserrat', sans-serif;
@@ -162,4 +184,63 @@
 }
 .mobile__nav-button.is-open > .mobile__nav-logo {
   display: none;
+}
+.header-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+  @media screen and(max-width:767px) {
+    display: none;
+  }
+  &__logo {
+    @media screen and(min-width:768px) {
+      padding-top: 41px;
+      padding-left: 40px;
+    }
+  }
+  &__logo-subtitle {
+    @media screen and (min-width: 768px) {
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 10px;
+      letter-spacing: 0.18em;
+      color: $orange;
+    }
+  }
+  &__logo-subtitle--span {
+    @media screen and (min-width: 768px) {
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 8px;
+      line-height: 10px;
+      color: $black;
+      letter-spacing: 0.18em;
+    }
+  }
+  &__nav-button-consul {
+    @media screen and(min-width:768px) {
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.14em;
+      color: $orange;
+      width: 260px;
+      height: 48px;
+      border: solid;
+    }
+  }
+  &__nav-button {
+    @media screen and (min-width: 768px) {
+      margin-left: 239px;
+    }
+  }
 }
