@@ -1,0 +1,121 @@
+.hero {
+  // @media screen and(max-width:767px) {
+  //   background-image: url(../images/wave.jpg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background-position: center;
+  // }
+  //   &__wave {
+
+  //   }
+
+  &__title {
+    @media screen and(max-width:767px) {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0.03em;
+      color: $black;
+    }
+  }
+  &__subtitle {
+    @media screen and(max-width:767px) {
+      margin-top: 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.08em;
+      color: $description;
+    }
+  }
+  &__guarnt {
+    @media screen and (max-width: 767px) {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.08em;
+      color: $black;
+    }
+  }
+  &__guarnt--span {
+    @media screen and(max-width:767px) {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: 0.08em;
+      color: $orange;
+    }
+  }
+  &__button {
+    @media screen and(max-width:767px) {
+      margin: 66px 10px 55px 10px;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: $white;
+      background-color: $orange;
+      padding: 15px 47px 15px 47px;
+    }
+  }
+  &__foto {
+    @media screen and(max-width:767px) {
+      margin-right: 0px;
+      margin-left: 36px;
+    }
+  }
+
+  &__list {
+    margin-top: 40px;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // flex-wrap: wrap;
+    // justify-content: center;
+  }
+  //   &__item {
+  //     display: flex;
+  //   }
+  &__item {
+    // display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  &__icon {
+    @media screen and(max-width:767px) {
+      &:not(:last-child) {
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &__text {
+    @media screen and(max-width:767px) {
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      // margin-right: 33px;
+      line-height: 164.9%;
+      letter-spacing: 0.08em;
+      color: $black;
+      margin-left: 10px;
+    }
+  }
+}
+.pizda {
+  // width: 216px;
+  // height: 69px;
+}
